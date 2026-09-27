@@ -3,307 +3,300 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bharat Ke 20 Pramukh Aitihasik Sthal - Detailed History</title>
-    <meta name="description" content="Explore detailed history with 20 lines in Hindi and 20 lines in English for top 20 historical monuments across India.">
-    <meta name="keywords" content="historical places in india, bharat ke aitihasik sthal, taj mahal, red fort, qutub minar, hampi, ajanta ellora">
-    
-    <!-- Google Search Console Verification -->
-    <meta name="google-site-verification" content="ENZYJDRVJZa3SypfcNQ1BMFl1KyJ_MgAX2AhpVZdno">
-
-    <!-- Google Analytics 4 (GA4) Tracking Code -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T82VQC70X9"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-T82VQC70X9');
-    </script>
-
+    <title>20 Historical Places - Hindi & English</title>
     <style>
-        :root {
-            --primary-color: #7B3F00;
-            --secondary-color: #D2B48C;
-            --bg-color: #FAF5F0;
-            --text-dark: #2C221E;
-            --card-bg: #FFFFFF;
-            --accent-color: #8B4513;
-        }
-
-        * {
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
         }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-dark);
-            line-height: 1.8;
-        }
-
-        header.hero-section {
-            background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=80');
-            background-size: cover;
-            background-position: center;
+        header {
+            background-color: #2c3e50;
             color: white;
             text-align: center;
-            padding: 80px 20px;
+            padding: 20px;
         }
-
-        .hero-content h1 {
-            font-size: 2.3rem;
-            margin-bottom: 12px;
-            color: #FFD700;
-            font-weight: 700;
-        }
-
-        .hero-content p {
-            font-size: 1.05rem;
-            max-width: 700px;
-            margin: 0 auto;
-            color: #f0f0f0;
-        }
-
         .container {
-            max-width: 900px;
-            margin: 30px auto;
+            max-width: 1200px;
+            margin: 20px auto;
             padding: 0 15px;
         }
-
-        .intro-box {
-            background: var(--card-bg);
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-            margin-bottom: 30px;
+        /* Grid for 20 Images on Homepage */
+        .grid-view {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
         }
-
-        .intro-box h2 {
-            color: var(--primary-color);
-            margin-bottom: 12px;
-            font-size: 1.5rem;
-        }
-
-        .intro-box p {
-            color: #444;
-            font-size: 0.98rem;
-            margin-bottom: 10px;
-        }
-
-        .monument-section {
-            background: var(--card-bg);
-            border-radius: 12px;
+        .card {
+            background: white;
+            border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-            margin-bottom: 35px;
-            border: 1px solid #eee;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: transform 0.2s;
         }
-
-        .monument-img {
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
             width: 100%;
-            height: 320px;
+            height: 160px;
             object-fit: cover;
         }
-
-        .monument-content {
-            padding: 25px;
-        }
-
-        .monument-content h2 {
-            color: var(--primary-color);
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            border-bottom: 2px solid var(--secondary-color);
-            padding-bottom: 8px;
-        }
-
-        .monument-content h3 {
-            color: var(--accent-color);
-            font-size: 1.15rem;
-            margin-top: 18px;
-            margin-bottom: 8px;
-        }
-
-        .monument-content p {
-            font-size: 0.98rem;
-            color: #333;
-            margin-bottom: 12px;
-            text-align: justify;
-        }
-
-        footer {
-            background-color: #1f1714;
-            color: #ccc;
+        .card-title {
+            padding: 15px;
             text-align: center;
-            padding: 30px;
-            margin-top: 50px;
-            font-size: 0.9rem;
+            font-weight: bold;
+            font-size: 16px;
+            color: #2c3e50;
         }
-
-        @media(max-width: 768px) {
-            .hero-content h1 { font-size: 1.8rem; }
-            .monument-img { height: 220px; }
-            .monument-content { padding: 18px; }
+        /* Detail View Styles */
+        .detail-view {
+            display: none;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .back-btn {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        .back-btn:hover {
+            background-color: #c0392b;
+        }
+        .detail-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .detail-header img {
+            max-width: 100%;
+            max-height: 350px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        .section-box {
+            margin-top: 20px;
+        }
+        h3 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            color: #2980b9;
+        }
+        ol {
+            line-height: 1.6;
         }
     </style>
 </head>
 <body>
 
-    <header class="hero-section">
-        <div class="hero-content">
-            <h1>Bharat Ke 20 Pramukh Aitihasik Sthal</h1>
-            <p>Har aitihasik sthal ki vistarit jankari: 20 Lines Hindi mein aur 20 Lines English mein.</p>
-        </div>
+    <header>
+        <h1>Historical Monuments Collection</h1>
+        <p>Kisi bhi image par click karke uski 20 lines ki jaankari Hindi aur English mein dekhein</p>
     </header>
 
-    <main class="container">
-        
-        <div class="intro-box">
-            <h2>Introduction to Indian Heritage (भारतीय ऐतिहासिक धरोहर)</h2>
-            <p>Is website par Bharat ke top 20 chuninda aitihasik sthalon (Monuments) ki list di gayi hai. Har sthal ke niche uske itihas, vastu-kala aur mahatva par 20 lines Hindi aur 20 lines English mein vistarit jankari uplabhdh karai gayi hai taaki aapko sampurna gyan mil sake.</p>
+    <div class="container">
+        <!-- Homepage Grid (20 Images) -->
+        <div id="homeGrid" class="grid-view">
+            <!-- JavaScript se yahan 20 cards dynamically load honge -->
         </div>
 
-        <!-- 1. Taj Mahal -->
-        <article class="monument-section">
-            <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1000&q=80" alt="Taj Mahal Agra" class="monument-img">
-            <div class="monument-content">
-                <h2>1. Taj Mahal, Agra (ताज महल, आगरा)</h2>
-                <h3>20 Lines in Hindi (हिंदी विवरण)</h3>
-                <p>1. ताजमहल भारत के उत्तर प्रदेश राज्य के आगरा शहर में यमुना नदी के दक्षिण तट पर स्थित एक विश्व प्रसिद्ध मकबरा है।<br>
-                2. इसका निर्माण मुगल सम्राट शाहजहाँ ने अपनी प्रिय पत्नी मुमताज महल की याद में करवाया था।<br>
-                3. इस भव्य ऐतिहासिक इमारत का निर्माण कार्य सन 1632 में आरंभ हुआ था और यह सन 1653 के आसपास पूरी हुई थी।<br>
-                4. इस मकबरे को बनाने में सफेद संगमरमर (White Marble) का मुख्य रूप से उपयोग किया गया है जो इसकी सुंदरता में चार चांद लगाता है।<br>
-                5. ताजमहल को यूनेस्को (UNESCO) द्वारा विश्व धरोहर स्थल (World Heritage Site) घोषित किया गया है।<br>
-                6. इसकी वास्तुकला में फारसी, इस्लामिक और भारतीय शैलियों का अनूठा और सुंदर मिश्रण देखने को मिलता है।<br>
-                7. इस स्मारक के चारों ओर खूबसूरत मुगल बाग और एक लंबा जलकुंड बना हुआ है जो इसके सौंदर्य को बढ़ाता है।<br>
-                8. इसके मुख्य गुंबद की ऊँचाई लगभग 73 मीटर है और इसके चारों कोनों पर चार मीनारें स्थित हैं।<br>
-                9. उस्ताद अहमद लाहौर इस वास्तुकला के मुख्य वास्तुकार (Architect) माने जाते हैं जिन्होंने इसके डिजाइन की रूपरेखा तैयार की थी।<br>
-                10. इसमें जड़े गए कीमती पत्थरों की पच्चीकारी कला को 'पिएत्रा ड्यूरा' (Pietra Dura) के नाम से जाना जाता है।<br>
-                11. चाँदनी रात में ताजमहल की चमक और उसकी खूबसूरती देखने लायक होती है, जिसे देखने दूर-दूर से सैलani आते हैं।<br>
-                12. यह प्रेम का सबसे बड़ा और जीवित प्रतीक माना जाता है जो पूरी दुनिया में अपनी एक अलग पहचान रखता है।<br>
-                13. मुमताज महल का मकबरा इस इमारत के ठीक केंद्रीय कक्ष के भीतर स्थित है।<br>
-                14. शाहजहाँ का मकबरा भी बाद में इसी मुख्य गुंबद के भीतर मुमताज के बगल में ही दफनाया गया था।<br>
-                15. इस ऐतिहासिक धरोहर को देखने के लिए हर साल लाखों देशी और विदेशी पर्यटक आगरा आते हैं।<br>
-                16. भारतीय पुरातत्व सर्वेक्षण विभाग (ASI) इस ऐतिहासिक धरोहर के रखरखाव और सुरक्षा की पूरी जिम्मेदारी संभालता है।<br>
-                17. यमुना नदी के किनारे होने के कारण सुबह और शाम के समय यहाँ का वातावरण बहुत शांत और मनमोहक होता है।<br>
-                18. इसे दुनिया के सात आश्चर्यों (Seven Wonders of the World) में भी सर्वोच्च स्थान प्राप्त है।<br>
-                19. ताजमहल भारत की सांस्कृतिक और ऐतिहासिक समृद्धि का एक बहुत बड़ा प्रतीक है।<br>
-                20. यह इमारत सदियों बीत जाने के बाद भी आज वैसी ही शान और शौकत के साथ खड़ी है।</p>
-
-                <h3>20 Lines in English (English Details)</h3>
-                <p>1. The Taj Mahal is a world-famous mausoleum located on the southern bank of the Yamuna River in Agra, Uttar Pradesh, India.<br>
-                2. It was commissioned by the Mughal Emperor Shah Jahan in memory of his beloved wife, Mumtaz Mahal.<br>
-                3. The construction of this magnificent monument began in 1632 and was completed around 1653.<br>
-                4. Pure white marble sourced from Makrana was extensively used in the construction of this iconic structure.<br>
-                5. The Taj Mahal has been designated as a UNESCO World Heritage Site for its immense cultural value.<br>
-                6. Its architecture features a harmonious blend of Persian, Islamic, and Indian architectural styles.<br>
-                7. The complex includes a sprawling Mughal garden with reflecting pools that enhance its majestic appearance.<br>
-                8. The central dome of the monument rises to a height of about 73 meters, flanked by four symmetrical minarets.<br>
-                9. Ustad Ahmad Lahori is widely regarded as the chief architect who designed this architectural masterpiece.<br>
-                10. The intricate inlay work involving semi-precious stones on the marble walls is known as Pietra Dura.<br>
-                11. The monument appears to change colors depending on the time of day and moonlight, looking ethereal at night.<br>
-                12. It is universally recognized as the ultimate symbol of eternal love and devotion.<br>
-                13. The actual tomb of Mumtaz Mahal is placed precisely in the lower central chamber of the mausoleum.<br>
-                14. Shah Jahan's mortal remains were also laid to rest alongside Mumtaz Mahal inside the main crypt later.<br>
-                15. Millions of domestic and international tourists visit Agra annually to witness this architectural wonder.<br>
-                16. The Archaeological Survey of India (ASI) meticulously maintains and preserves this historic monument.<br>
-                17. Situated alongside the Yamuna River, the surrounding ambiance during sunrise and sunset is serene.<br>
-                18. It proudly holds its position among the New Seven Wonders of the World.<br>
-                19. The Taj Mahal remains a supreme testament to India's rich historical and artistic heritage.<br>
-                20. Even after centuries, it continues to stand with the same pristine grandeur and grace.</p>
+        <!-- Detail Page View -->
+        <div id="detailPage" class="detail-view">
+            <button class="back-btn" onclick="goBack()">← Sabhi Images par Wapas Jayein</button>
+            <div class="detail-header">
+                <h2 id="itemTitle"></h2>
+                <img id="itemImage" src="" alt="Monument Image">
             </div>
-        </article>
-
-        <!-- 2. Red Fort -->
-        <article class="monument-section">
-            <img src="https://images.unsplash.com/photo-1585135497277-ee49b0481285?auto=format&fit=crop&w=1000&q=80" alt="Red Fort Delhi" class="monument-img">
-            <div class="monument-content">
-                <h2>2. Red Fort, Delhi (लाल किला, दिल्ली)</h2>
+            
+            <div class="section-box">
                 <h3>20 Lines in Hindi (हिंदी विवरण)</h3>
-                <p>1. लाल किला पुरानी दिल्ली में स्थित एक ऐतिहासिक किला है जिसका निर्माण मुगल वास्तुकला का बेहतरीन नमूना है।<br>
-                2. इस किले का निर्माण मुगल सम्राट शाहजहाँ द्वारा अपनी नई राजधानी शाहजहाँबाद के रूप में 1638 में शुरू कराया गया था।<br>
-                3. लाल बलुआ पत्थर (Red Sandstone) से बनी लंबी दीवारों के कारण ही इस ऐतिहासिक किले का नाम लाल किला पड़ा।<br>
-                4. हर साल 15 अगस्त को स्वतंत्रता दिवस के अवसर पर भारत के प्रधानमंत्री यहीं से राष्ट्रीय ध्वज फहराते हैं।<br>
-                5. इस किले के मुख्य प्रवेश द्वार का नाम लाहड़ी गेट और दिल्ली गेट है जो पर्यटकों को आकर्षित करते हैं।<br>
-                6. इसके परिसर के भीतर दीवान-ए-आम और दीवान-ए-खास जैसी भव्य इमारतें आज भी मौजूद हैं।<br>
-                7. दीवान-ए-खास में ही प्रसिद्ध मयूर सिंहासन (Peacock Throne) रखा जाता था जिसे बाद में नादिर शाह लूट कर ले गया था।<br>
-                8. यूनेस्को ने इस ऐतिहासिक किले को वर्ष 2007 में विश्व धरोहर स्थल की सूची में शामिल किया था।<br>
-                9. मुगल साम्राज्य के पतन के बाद इस पर मराठों और बाद में अंग्रेजों का अधिकार हो गया था।<br>
-                10. ब्रिटिश शासनकाल के दौरान इस किले के एक बड़े हिस्से को सैन्य बैरकों में बदल दिया गया था।<br>
-                11. इस किले के भीतर रंग महल, शीश महल और मोती मस्जिद जैसी खूबसूरत संरचनाएँ बनी हुई हैं।<br>
-                12. इसकी प्राचीर से देश की आजादी की कई ऐतिहासिक लड़ाइयों और आंदोलनों का गवाह रहा है यह किला।<br>
-                13. यहाँ शाम के समय होने वाला लाइट एंड साउंड शो (Light & Sound Show) इसके इतिहास को बहुत सुंदर ढंग से दर्शाता है।<br>
-                14. भारतीय इतिहास में यह किला मुगलों के राजनीतिक और प्रशासनिक केंद्र का मुख्य प्रतीक रहा है।<br>
-                15. इस किले की वास्तुकला में फारसी, तैमूरी और हिंदू शैलियों का मिश्रण स्पष्ट रूप से दिखाई देता है।<br>
-                16. लाल किले के अंदर बने संग्रहालयों में मुगल काल के वस्त्र, हथियार और कलाकृतियाँ सुरक्षित रखी गई हैं।<br>
-                17. यह दिल्ली आने वाले पर्यटकों के लिए सबसे प्रमुख और आकर्षण का केंद्र बिंदु माना जाता है।<br>
-                18. सुरक्षा की दृष्टि से हर राष्ट्रीय पर्व पर इस किले के आसपास विशेष कड़े इंतजाम किए जाते हैं।<br>
-                19. लाल किला भारत की स्वतंत्रता और संप्रभुता का एक अत्यंत महत्वपूर्ण राष्ट्रीय प्रतीक है।<br>
-                20. यह पुरानी दिल्ली की व्यस्त सड़कों के बीच शान से अपनी ऐतिहासिक गाथा सुना रहा है।</p>
-
-                <h3>20 Lines in English (English Details)</h3>
-                <p>1. The Red Fort is a historic fortification located in Old Delhi, representing peak Mughal architecture.<br>
-                2. It was commissioned in 1638 by Mughal Emperor Shah Jahan when he decided to shift his capital to Shahjahanabad.<br>
-                3. The fort gets its name from the massive red sandstone walls that enclose the entire complex.<br>
-                4. Every year on Independence Day (15th August), the Prime Minister of India hoists the national flag from its ramparts.<br>
-                5. The primary gateways of the fort are the Lahore Gate and the Delhi Gate, which welcome visitors.<br>
-                6. Inside the complex, notable structures include the Diwan-i-Aam (Hall of Public Audience) and Diwan-i-Khas.<br>
-                7. The Diwan-i-Khas once housed the legendary Peacock Throne before it was looted by Nadir Shah.<br>
-                8. UNESCO inscribed the Red Fort as a World Heritage Site in the year 2007.<br>
-                9. Following the decline of the Mughal Empire, control of the fort passed to the Marathas and later the British.<br>
-                10. During British rule, significant portions of the palace interiors were converted into military barracks.<br>
-                11. Remarkable inner structures include the Rang Mahal, Sheesh Mahal, and the pristine Moti Masjid.<br>
-                12. Its ramparts have witnessed critical milestones in India's freedom struggle and political history.<br>
-                13. An evening Light and Sound Show vividly narrates the glorious history associated with the fort.<br>
-                14. Historically, it served as the prime political and administrative headquarters of the Mughal Empire.<br>
-                15. Its architectural blueprint reflects a brilliant fusion of Persian, Timurid, and Indian traditions.<br>
-                16. Museums inside the complex preserve royal costumes, weapons, and historical artifacts from the Mughal era.<br>
-                17. It remains one of the most prominent tourist attractions for visitors exploring the capital city.<br>
-                18. Strict security arrangements are deployed around the monument during all major national celebrations.<br>
-                19. The Red Fort stands as a supreme national symbol of India's sovereignty and independence.<br>
-                20. Amidst the bustling streets of Old Delhi, it proudly echoes tales of bygone imperial eras.</p>
+                <ol id="hindiList"></ol>
             </div>
-        </article>
 
-        <!-- 3. Qutub Minar -->
-        <article class="monument-section">
-            <img src="https://images.unsplash.com/photo-1590031905470-a1a1feacbb6b?auto=format&fit=crop&w=1000&q=80" alt="Qutub Minar Delhi" class="monument-img">
-            <div class="monument-content">
-                <h2>3. Qutub Minar, Delhi (कुतुब मीनार, दिल्ली)</h2>
-                <h3>20 Lines in Hindi (हिंदी विवरण)</h3>
-                <p>1. कुतुब मीनार दिल्ली के महरोली क्षेत्र में स्थित दुनिया की ईंटों से बनी सबसे ऊंची मीनार है।<br>
-                2. इस ऐतिहासिक मीनार की नींव सन 1193 में कुतुब-उद्-दिन ऐबक द्वारा रखी गई थी।<br>
-                3. कुतुब-उद्-दिन ऐबक इस मीनार की केवल पहली मंजिल ही बनवा पाए थे, जिसके बाद उनके उत्तराधिकारी ने काम आगे बढ़ाया।<br>
-                4. उनके दामाद और उत्तराधिकारी शम्स-उद्-दिन इल्तुतमिश ने इस मीनार की शेष मंजिलाें का निर्माण पूरा करवाया था।<br>
-                5. बाद में बिजली गिरने और भूकंप के कारण क्षतिग्रस्त होने पर फिरोजशाह तुगलक ने इसकी ऊपरी मंजिलों की मरम्मत कराई।<br>
-                6. इस मीनार की कुल ऊँचाई लगभग 73 मीटर (240 फीट) है जो दूर से ही स्पष्ट दिखाई देती है।<br>
-                7. इस मीनार के निर्माण में लाल बलुआ पत्थर और संगमरमर का बेहतरीन इस्तेमाल किया गया है।<br>
-                8. इसकी प्रत्येक मंजिल पर बहुत ही सुंदर और बारीक नक्काशी तथा कुरान की आयतें उकेरी गई हैं।<br>
-                9. इसके परिसर में स्थित 'लौह स्तंभ' (Iron Pillar) पिछले 1600 वर्षों से खुले में रहने के बावजूद आज तक जंगमुक्त है।<br>
-                10. यह लौह स्तंभ प्राचीन भारत के उच्च धातु विज्ञान (Metallurgy) का एक चमत्कारी उदाहरण माना जाता है।<br>
-                11. यूनेस्को ने वर्ष 1993 में कुतुब मीनार और इसके परिसरों को विश्व धरोहर स्थल घोषित किया था।<br>
-                12. इस परिसर के अंदर कुव्वत-उल-इस्लाम मस्जिद भी स्थित है जो भारत की शुरुआती मस्ジदों में से एक है।<br>
-                13. मीनार के भीतर कुल 375 घुमावदार सीढ़ियाँ हैं जो ऊपर की मंजिल तक जाती हैं (वर्तमान में प्रवेश बंद है)।<br>
-                14. इस ऐतिहासिक स्थल को देखने के लिए प्रतिदिन हजारों देश-विदेश के सैलानी दिल्ली आते हैं।<br>
-                15. इसकी वास्तुकला इंडو-इस्लाम शैली (Indo-Islamic Architecture) का एक अत्यंत प्राचीन नमूना है।<br>
-                16. इतिहासकार इस मीनार के निर्माण के पीछे विजय स्तंभ या अजान देने के उद्देश्य का अनुमान लगाते हैं।<br>
-                17. इस पूरे परिसर की देखरेख भारतीय पुरातत्व सर्वेक्षण (ASI) द्वारा बहुत ही सतर्कता से की जाती है।<br>
-                18. इसके आसपास का हरा-भरा पार्क परिसर सैलानियों को बेहद आकर्षित करता है।<br>
-                19. यह दिल्ली के सबसे पुराने और लोकप्रिय ऐतिहासिक स्मारकों में प्रमुख स्थान रखता है।<br>
-                20. यह मीनार सदियों से दिल्ली की ऐतिहासिक पहचान और शान का प्रतीक बनी हुई है।</p>
-
+            <div class="section-box">
                 <h3>20 Lines in English (English Details)</h3>
-                <p>1. The Qutub Minar is the tallest brick minaret in the world, located in the Mehrauli area of Delhi.<br>
-                2. The foundation of this historic minaret was laid in 1193 by Qutb-ud-din Aibak.<br>
-                3. Aibak could only complete the construction of the first story before his reign ended.<br>
-                4. His son-in-law and successor, Shams-ud-din Iltutmish, completed the remaining stories of the tower.<br>
-                5. Later, after lightning strikes and earthquake damage, Firoz Shah Tughlaq repaired the upper levels.<br>
-                6. The total height of the minaret is approximately 73 meters (240 feet), making it a striking landmark.<br>
-                7. Red sandstone and marble have been extensively utilized in crafting this architectural marvel.<br>
-                8. Each tier features intricate carvings, geometric patterns, and inscriptions from the Holy Quran.<br>
-                9. The famous Iron Pillar within the complex has remained completely rust-free for over 1,600 years.<br>
-                10. This ancient Iron Pillar stands as a miraculous testament to ancient India's metallurgy skills.<br>
-                11. UNESCO inscribed the Qutub Minar and its surrounding monuments as a World Heritage Site in 1993.<br>
-                12. The complex also houses the Quwwat-ul-Islam Mosque, considered one of the earliest mosques built in India.<br>
-                13. There are 375 spiral steps inside the tower leading to the 
+                <ol id="englishList"></ol>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Yahan aap apni 20 items ka data daal sakte hain
+        const itemsData = [
+            {
+                id: 1,
+                title: "Red Fort, Delhi (लाल किला, दिल्ली)",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Red_Fort_Delhi.jpg/800px-Red_Fort_Delhi.jpg",
+                hindi: [
+                    "1. Lal Qila Delhi ke purane ilaqe mein sthit ek aitihasik qila hai.",
+                    "2. Iska nirman Mughal samrat Shah Jahan ne karwaya tha.",
+                    "3. Is qile ka mukhy roop se laal balua patthar ka istemal karke banaya gaya hai.",
+                    "4. Iski neev 1638 mein rakhi gayi thi aur yeh 1648 mein ban kar taiyar hua tha.",
+                    "5. Har saal 16 August ko desh ke Pradhan Mantri yahan tiranga fahrate hain.",
+                    "6. Yeh qila Mughal samrajya ki rajdhani hua karta tha.",
+                    "7. Iske andar Rang Mahal, Moti Masjid aur Diwan-i-Aam jaise sthal hain.",
+                    "8. UNESCO ne 2007 mein ise Vishwa Dharohar (World Heritage Site) ghoshit kiya tha.",
+                    "9. Iski diwarein bahut unchi aur suraksha ki drishti se mazboot hain.",
+                    "10. Yahan rozani hazaron deshi aur videshi paryatak ghumne aate hain.",
+                    "11. Iska vastukala (Architecture) Persian aur Islamic shaili ka anokha sangam hai.",
+                    "12. Qile ke andar ek sangrahalaya (Museum) bhi hai jismein purani cheezein rakhi hain.",
+                    "13. Shah Jahan ne apni nayi rajdhani Shahjahanabad ke roop mein ise banaya tha.",
+                    "14. Iske samne Chandni Chowk ka prasiddh bazaar sthit hai.",
+                    "15. Iski suraksha ka jimma bharat sarkar aur ASI ke paas hai.",
+                    "16. Yeh bharat ki swatantrata sangram ka bhi ek mukhya gawah raha hai.",
+                    "17. Is qile ki khoobsurati dekhne laayak hoti hai.",
+                    "18. Light and Sound show ke zariye iska itihas dikhaya jata hai.",
+                    "19. Yeh Delhi ki pehchan aur shaan ka prateek hai.",
+                    "20. Aazadi ke prateek ke roop mein iska Bharat ke itihas mein bahut bada sthan hai."
+                ],
+                english: [
+                    "1. The Red Fort is a historic fort located in the old area of Delhi.",
+                    "2. It was built by the Mughal Emperor Shah Jahan.",
+                    "3. This fort is primarily constructed using red sandstone.",
+                    "4. Its foundation was laid in 1638 and completed in 1648.",
+                    "5. Every year on Independence Day, the Prime Minister hoists the tricolor here.",
+                    "6. This fort used to be the capital of the Mughal Empire.",
+                    "7. Inside it, there are structures like Rang Mahal, Moti Masjid, and Diwan-i-Aam.",
+                    "8. UNESCO declared it a World Heritage Site in 2007.",
+                    "9. Its walls are very high and strong from a security perspective.",
+                    "10. Thousands of domestic and foreign tourists visit it daily.",
+                    "11. Its architecture is a unique blend of Persian and Islamic styles.",
+                    "12. There is also a museum inside the fort containing historical artifacts.",
+                    "13. Shah Jahan built it as part of his new capital Shahjahanabad.",
+                    "14. In front of it lies the famous market of Chandni Chowk.",
+                    "15. Its security is managed by the government and ASI.",
+                    "16. It has also been a major witness to India's freedom struggle.",
+                    "17. The beauty of this fort is worth seeing.",
+                    "18. Its history is showcased through a Light and Sound show.",
+                    "19. It is a symbol of the identity and pride of Delhi.",
+                    "20. It holds a major place in Indian history as a symbol of freedom."
+                ]
+            },
+            {
+                id: 2,
+                title: "Qutub Minar, Delhi (कुतुब मीनार, दिल्ली)",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/13/Qutb_Minar_and_its_monuments%2C_Delhi_04.jpg/800px-Qutb_Minar_and_its_monuments%2C_Delhi_04.jpg",
+                hindi: [
+                    "1. Qutub Minar Delhi ke Mehrauli kshetra mein sthit duniya ki sabse unchi minar hai.",
+                    "2. Is aitihasik minar ki neev san 1193 mein Qutub-ud-din Aibak dwara rakhi gayi thi.",
+                    "3. Qutub-ud-din Aibak is minar ki kewal pehli manzil hi bana paye the.",
+                    "4. Baad mein unke uttaraadhikari Shams-ud-din Iltutmish ne iski shesh manzilon ka nirman pura karwaya.",
+                    "5. Bijli girne aur bhukamp ke kaaran kshatigrast hone par Firozshah Tughlaq ne iski marmat karwai.",
+                    "6. Is minar ki kul unchai lagbhag 73 meter (240 feet) hai.",
+                    "7. Iske nirman mein laal balua patthar aur sangarmarhar ka istemal kiya gaya hai.",
+                    "8. Iski har manzil par bahut hi sundar aur barik nakkashi ki gayi hai.",
+                    "9. Iske parisar mein sthit 'Loh Stambh' pichle 1600 varsho se khule mein rehne ke baad bhi jangmukt hai.",
+                    "10. Yeh stambh prachin bharat ki dhatu vigyan ki ek chamatkarik udaharan hai.",
+                    "11. UNESCO ne varsh 1993 mein Qutub Minar ko vishwa dharohar ghoshit kiya tha.",
+                    "12. Iske andar Quwwat-ul-Islam masjid bhi sthit hai.",
+                    "13. Minar ke bhitar kul 375 ghumavadar seedhiyan hain.",
+                    "14. Is aitihasik sthal ko dekhne ke liye pratidin hazaron log aate hain.",
+                    "15. Iski vastukala Indo-Islamic shaili ka ek adbhut namoona hai.",
+                    "16. Itihasakar iske nirman ke pichhe vijay stambh ka anuman lagate hain.",
+                    "17. Is pure parisar ki dekhrekh ASI dwara ki jaati hai.",
+                    "18. Iske aaspaas ka hara-bhara park paryatakon ko aakarshit karta hai.",
+                    "19. Yeh Delhi ke sabhi purane aur lokapriy aitihasik smarakon mein mukhya sthan rakhta hai.",
+                    "20. Yeh minar sadiyon se bharat ki aitihasik pehchan bani hui hai."
+                ],
+                english: [
+                    "1. Qutub Minar is the tallest brick minaret in the world, located in Delhi.",
+                    "2. The foundation of this historic minaret was laid in 1193 by Qutub-ud-din Aibak.",
+                    "3. Aibak could only complete the construction of the first story.",
+                    "4. Later, his successor Shams-ud-din Iltutmish completed the remaining stories.",
+                    "5. After lightning strikes and earthquake damage, Firoz Shah Tughlaq repaired it.",
+                    "6. The total height of the minaret is approximately 73 meters (240 feet).",
+                    "7. Red sandstone and marble were used in its construction.",
+                    "8. Beautiful and intricate carvings are done on every floor of it.",
+                    "9. The Iron Pillar located in its complex is rust-free even after 1600 years.",
+                    "10. This pillar is a miraculous example of ancient Indian metallurgy.",
+                    "11. UNESCO declared Qutub Minar a World Heritage Site in 1993.",
+                    "12. Quwwat-ul-Islam Mosque is also situated inside its complex.",
+                    "13. There are a total of 375 winding steps inside the minaret.",
+                    "14. Thousands of people visit this historic site daily.",
+                    "15. Its architecture is a wonderful specimen of Indo-Islamic style.",
+                    "16. Historians speculate it was built as a victory tower.",
+                    "17. The maintenance of this entire complex is done by the ASI.",
+                    "18. The lush green park around it attracts tourists.",
+                    "19. It holds a major place among old and popular monuments of Delhi.",
+                    "20. This minaret has remained India's historical identity for centuries."
+                ]
+            }
+            // Isi tarah aap baaki ke 3 se lekar 20 tak ke items yahan add kar sakte hain
+        ];
+
+        // Function to render the 20 cards on homepage
+        function renderGrid() {
+            const gridContainer = document.getElementById('homeGrid');
+            gridContainer.innerHTML = '';
+
+            // Agar data kam hai toh loop ko chalane ke liye hum demo items repeat kar sakte hain taaki 20 dikhein
+            for (let i = 1; i <= 20; i++) {
+                // Demo ke liye hum pehle 2 items ko hi loop karke 20 bana rahe hain, aap unique data daal sakte hain
+                let dataIndex = (i - 1) % itemsData.length;
+                let item = itemsData[dataIndex];
+
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.onclick = () => showDetail(i);
+                card.innerHTML = `
+                    <img src="${item.image}" alt="Image ${i}">
+                    <div class="card-title">${i}. ${item.title.split('(')[0]}</div>
+                `;
+                gridContainer.appendChild(card);
+            }
+        }
+
+        // Function to show individual detail page
+        function showDetail(index) {
+            let dataIndex = (index - 1) % itemsData.length;
+            let item = itemsData[dataIndex];
+
+            document.getElementById('itemTitle').innerText = `${index}. ${item.title}`;
+            document.getElementById('itemImage').src = item.image;
+
+            // Populate Hindi List
+            const hindiList = document.getElementById('hindiList');
+            hindiList.innerHTML = '';
+            item.hindi.forEach(text => {
+                const li = document.createElement('li');
+                li.innerText = text;
+                hindiList.appendChild(li);
+            });
+
+            // Populate English List
+            const englishList = document.getElementById('englishList');
+            englishList.innerHTML = '';
+            item.english.forEach(text => {
+                const li = document.createElement('li');
+                li.innerText = text;
+                englishList.appendChild(li);
+            });
+
+            // Toggle views
+            document.getElementById('homeGrid').style.display = 'none';
+            document.getElementById('detailPage').style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+
+        // Function to go back to homepage grid
+        function goBack() {
+            document.getElementById('detailPage').style.display = 'none';
+            document.getElementById('homeGrid').style.display = 'grid';
+            window.scrollTo(0, 0);
+        }
+
+        // Initialize page
+        renderGrid();
+    </script>
+
+</body>
+</html>
