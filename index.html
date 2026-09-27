@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Famous Historical Places in India | Bharat Ke Aitihasik Sthal History</title>
-    <meta name="description" content="Explore famous historical monuments in India like Taj Mahal, Red Fort, Qutub Minar, and Hampi with complete history in Hindi and Hinglish.">
+    <title>Famous Historical Monuments in India with Detailed History | Bharat Ke Aitihasik Sthal</title>
+    <meta name="description" content="Explore detailed history, architecture, and complete information of famous historical monuments in India like Taj Mahal, Red Fort, Qutub Minar, and Hampi in Hindi and Hinglish.">
+    <meta name="keywords" content="historical places in india, bharat ke aitihasik sthal, taj mahal history in hindi, red fort delhi history, qutub minar information, hampi ruins karnataka">
     
     <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="ENZYJDRVJZa3SypfcNQ1BMFl1KyJ_MgAX2AhpVZdno">
@@ -15,7 +16,6 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-T82VQC70X9');
     </script>
 
@@ -26,6 +26,7 @@
             --bg-color: #FAF5F0;
             --text-dark: #2C221E;
             --card-bg: #FFFFFF;
+            --accent-color: #8B4513;
         }
 
         * {
@@ -38,93 +39,124 @@
         body {
             background-color: var(--bg-color);
             color: var(--text-dark);
-            line-height: 1.6;
+            line-height: 1.8;
         }
 
-        .hero-section {
-            background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=80');
+        header.hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=80');
             background-size: cover;
             background-position: center;
             color: white;
             text-align: center;
-            padding: 90px 20px;
+            padding: 100px 20px;
         }
 
         .hero-content h1 {
             font-size: 2.8rem;
-            margin-bottom: 12px;
+            margin-bottom: 15px;
             color: #FFD700;
             font-weight: 700;
         }
 
         .hero-content p {
-            font-size: 1.15rem;
-            max-width: 650px;
-            margin: 0 auto 25px auto;
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+            color: #f0f0f0;
         }
 
         .search-box input {
             width: 100%;
-            max-width: 450px;
-            padding: 12px 20px;
-            font-size: 1rem;
+            max-width: 500px;
+            padding: 14px 22px;
+            font-size: 1.05rem;
             border: none;
-            border-radius: 25px;
+            border-radius: 30px;
             outline: none;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 40px auto;
             padding: 0 20px;
         }
 
-        .section-title {
-            text-align: center;
-            margin-bottom: 35px;
-            color: var(--primary-color);
-            font-size: 2rem;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
-        }
-
-        .card {
+        .intro-article {
             background: var(--card-bg);
-            border-radius: 10px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+
+        .intro-article h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+
+        .intro-article p {
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        .monument-section {
+            background: var(--card-bg);
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            margin-bottom: 40px;
+            transition: transform 0.3s ease;
         }
 
-        .card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-        }
-
-        .card img {
+        .monument-section img {
             width: 100%;
-            height: 210px;
+            height: 350px;
             object-fit: cover;
         }
 
-        .card-content {
-            padding: 22px;
+        .monument-content {
+            padding: 30px;
         }
 
-        .card-content h3 {
+        .monument-content h2 {
             color: var(--primary-color);
-            margin-bottom: 12px;
-            font-size: 1.4rem;
+            font-size: 2rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 8px;
         }
 
-        .card-content p {
-            font-size: 0.92rem;
-            margin-bottom: 12px;
+        .monument-content h3 {
+            color: var(--accent-color);
+            font-size: 1.3rem;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .monument-content p {
+            font-size: 1.02rem;
+            margin-bottom: 15px;
+            color: #333;
+            text-align: justify;
+        }
+
+        .features-list {
+            background: #fdfbf7;
+            padding: 20px;
+            border-left: 4px solid var(--primary-color);
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .features-list ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .features-list li {
+            margin-bottom: 8px;
             color: #444;
         }
 
@@ -132,9 +164,14 @@
             background-color: #1f1714;
             color: #ccc;
             text-align: center;
-            padding: 22px;
+            padding: 30px;
             margin-top: 60px;
-            font-size: 0.95rem;
+            font-size: 1rem;
+        }
+
+        @media(max-width: 768px) {
+            .hero-content h1 { font-size: 2.2rem; }
+            .monument-content h2 { font-size: 1.6rem; }
         }
     </style>
 </head>
@@ -142,71 +179,127 @@
 
     <header class="hero-section">
         <div class="hero-content">
-            <h1>Bharatiya Aitihasik Sthal</h1>
-            <p>Bharat ke mukhya aitihasik sthalon ki puri jankari Hindi aur Hinglish mein.</p>
+            <h1>Bharat Ke Mahan Aitihasik Sthal aur Itihas</h1>
+            <p>Explore detailed history, architectural brilliance, and cultural significance of India's top monuments in Hindi and Hinglish.</p>
             <div class="search-box">
-                <input type="text" id="searchInput" placeholder="Search monument (e.g., Taj Mahal, Red Fort, Hampi)..." onkeyup="filterPlaces()">
+                <input type="text" id="searchInput" placeholder="Search monuments (e.g., Taj Mahal, Delhi, Hampi)..." onkeyup="filterContent()">
             </div>
         </div>
     </header>
 
     <main class="container">
-        <h2 class="section-title">Famous Historical Monuments (प्रमुख ऐतिहासिक स्मारक)</h2>
         
-        <div class="grid" id="placesGrid">
-            <div class="card" data-name="taj mahal agra">
-                <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=600&q=80" alt="Taj Mahal">
-                <div class="card-content">
-                    <h3>Taj Mahal, Agra</h3>
-                    <p class="hindi-text"><strong>Hindi:</strong> ताज महल आगरा में यमुना नदी के दक्षिणी तट पर स्थित है। इसे मुगल सम्राट शाहजहाँ ने अपनी पत्नी मुमताज महल की याद में बनवाया था।</p>
-                    <p class="hinglish-text"><strong>Hinglish:</strong> Taj Mahal Agra mein Yamuna nadi ke kinare sthit hai. Yeh Mughal architecture ka ek behtareen namuna hai jo apni khubsurati ke liye duniya bhar mein prasiddh hai.</p>
-                </div>
-            </div>
+        <!-- Introduction Article for SEO -->
+        <section class="intro-article">
+            <h2>Introduction to India's Rich Historical Heritage (भारत की ऐतिहासिक विरासत)</h2>
+            <p>Bharat ka itihas hazaro saal purana hai, jisme kai mahan samrajyo, rajao aur dynasties ka shasan raha hai. Yahan ke aitihasik sthal (Historical Monuments) na keval desh ki shandar kala aur vastu-kala (architecture) ko darshate hain, balki vishav bhar ke tourists aur historians ko bhi aakarshit karte hain.</p>
+            <p>Is website par hum aapko Bharat ke sabse prasiddh aitihasik smarako ki gehri aur vistarit jankari (Detailed History) Hindi aur Hinglish bhasha mein uplabdh karwa rahe hain, taaki students aur history lovers ko poori information ek hi jagah mil sake.</p>
+        </section>
 
-            <div class="card" data-name="red fort lal qila delhi">
-                <img src="https://images.unsplash.com/photo-1585135497277-ee49b0481285?auto=format&fit=crop&w=600&q=80" alt="Red Fort">
-                <div class="card-content">
-                    <h3>Red Fort (Lal Qila), Delhi</h3>
-                    <p class="hindi-text"><strong>Hindi:</strong> लाल किला पुरानी दिल्ली में स्थित एक ऐतिहासिक किला है। इसे शाहजहाँ ने अपनी नई राजधानी शाहजहानाबाद के महल के रूप में बनवाया था।</p>
-                    <p class="hinglish-text"><strong>Hinglish:</strong> Lal Qila Delhi mein sthit hai. Yahan har saal 15 August (Independence Day) ko desh ke Pradhan Mantri tiranga fahrate hain.</p>
-                </div>
-            </div>
+        <div id="contentContainer">
 
-            <div class="card" data-name="qutub minar delhi">
-                <img src="https://images.unsplash.com/photo-1590031905470-a1a1feacbb6b?auto=format&fit=crop&w=600&q=80" alt="Qutub Minar">
-                <div class="card-content">
-                    <h3>Qutub Minar, Delhi</h3>
-                    <p class="hindi-text"><strong>Hindi:</strong> कुतुब मीनार दिल्ली के महरोली में स्थित है। यह दुनिया की सबसे ऊंची ईंटों से बनी मीनार है, जिसकी नींव कुतुबुद्दीन ऐबक ने रखी थी।</p>
-                    <p class="hinglish-text"><strong>Hinglish:</strong> Qutub Minar Delhi mein sthit duniya ki sabse unchi eenton ki minar hai. Iska nirman kaam Qutb-ud-din Aibak ne shuru karwaya tha.</p>
-                </div>
-            </div>
+            <!-- Monument 1: Taj Mahal -->
+            <article class="monument-section" data-keywords="taj mahal agra shah Jahan mumtaz white marble uttar pradesh">
+                <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1000&q=80" alt="Taj Mahal Agra History and Architecture">
+                <div class="monument-content">
+                    <h2>1. Taj Mahal, Agra (ताज महल, आगरा)</h2>
+                    
+                    <h3>Itihas aur Nirman (History & Construction)</h3>
+                    <p class="hindi-text"><strong>Hindi:</strong> ताज महल उत्तर प्रदेश के आगरा शहर में यमुना नदी के दक्षिणी तट पर स्थित एक विश्व प्रसिद्ध मकबरा है। इसका निर्माण मुगल सम्राट शाहजहाँ ने अपनी प्रिय पत्नी मुमताज महल की याद में करवाया था। इसका निर्माण कार्य 1632 में शुरू हुआ था और लगभग 1653 में यह पूरा हुआ था।</p>
+                    <p class="hinglish-text"><strong>Hinglish:</strong> Taj Mahal Agra mein Yamuna nadi ke kinare sthit hai. Yeh Mughal Emperor Shah Jahan dwara apni begum Mumtaz Mahal ki yaad mein banwaya gaya tha. Isme safed sangemarmar (White Marble) ka khubsurat upyog kiya gaya hai aur yeh UNESCO World Heritage Site hai.</p>
 
-            <div class="card" data-name="hampi karnataka ruins">
-                <img src="https://images.unsplash.com/photo-1620766188414-206f3d03322e?auto=format&fit=crop&w=600&q=80" alt="Hampi">
-                <div class="card-content">
-                    <h3>Hampi, Karnataka</h3>
-                    <p class="hindi-text"><strong>Hindi:</strong> हम्पी कर्नाटक में स्थित विजयनगर साम्राज्य की प्राचीन राजधानी है। यहाँ के खंडहर और मंदिर वास्तुकला के अनूठे उदाहरण हैं।</p>
-                    <p class="hinglish-text"><strong>Hinglish:</strong> Hampi Karnataka mein sthit Vijayanagara Empire ki prachin rajdhani hai. Yahan ke ancient ruins aur stone temples UNESCO World Heritage site hain.</p>
+                    <div class="features-list">
+                        <h3>Vastu-kala aur Visheshatayen (Architectural Features):</h3>
+                        <ul>
+                            <li><strong>White Marble:</strong> Isme Makrana ka safed sangemarmar istemal hua hai jo roshni ke sath rang badalta hai.</li>
+                            <li><strong>Islamic & Persian Design:</strong> Iski symmetry, dome aur minarets Mughal aur Persian architecture ka behtareen namuna hain.</li>
+                            <li><strong>Pietra Dura Work:</strong> Iske andar kee qeemti pattharon ki nakqashi ko Pietra Dura kaha jata hai.</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
+            </article>
+
+            <!-- Monument 2: Red Fort -->
+            <article class="monument-section" data-keywords="red fort lal qila delhi shah jahan independence day">
+                <img src="https://images.unsplash.com/photo-1585135497277-ee49b0481285?auto=format&fit=crop&w=1000&q=80" alt="Red Fort Delhi History">
+                <div class="monument-content">
+                    <h2>2. Red Fort (Lal Qila), Delhi (लाल किला, दिल्ली)</h2>
+                    
+                    <h3>Delhi ke Lal Kile ka Itihas (History of Red Fort)</h3>
+                    <p class="hindi-text"><strong>Hindi:</strong> लाल किला पुरानी दिल्ली में स्थित एक ऐतिहासिक किला है जिसे मुगल बादशाह शाहजहाँ ने 1638 में अपनी नई राजधानी शाहजहानाबाद के महल के रूप में बनवाया था। इस किले की दीवारें लाल बलुआ पत्थर से बनी हैं, जिसके कारण इसे लाल किला कहा जाता है।</p>
+                    <p class="hinglish-text"><strong>Hinglish:</strong> Lal Qila Delhi mein sthit hai jiska nirman Shah Jahan ne karwaya tha jab unhone apni rajdhani Agra se Delhi shift ki thi. Yahan har saal 15 August (Independence Day) ko desh ke Prime Minister tiranga fahrate hain aur desh ko sambodhit karte hain.</p>
+
+                    <div class="features-list">
+                        <h3>Mukhya Aakarshan (Key Attractions):</h3>
+                        <ul>
+                            <li><strong>Lahori Gate:</strong> Yeh kile ka main entrance hai.</li>
+                            <li><strong>Diwan-i-Aam & Diwan-i-Khas:</strong> Jahan raja aam logon aur khas mantriyon se milte the.</li>
+                            <li><strong>Rang Mahal aur Moti Masjid:</strong> Mughal shashkon ke shandar kamre aur ibadatgah.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Monument 3: Qutub Minar -->
+            <article class="monument-section" data-keywords="qutub minar delhi qutub-ud-din aibak tallest brick minaret">
+                <img src="https://images.unsplash.com/photo-1590031905470-a1a1feacbb6b?auto=format&fit=crop&w=1000&q=80" alt="Qutub Minar Delhi Information">
+                <div class="monument-content">
+                    <h2>3. Qutub Minar, Delhi (कुतुब मीनार, दिल्ली)</h2>
+                    
+                    <h3>Qutub Minar ki Sthapana aur Vistar (Construction & Origin)</h3>
+                    <p class="hindi-text"><strong>Hindi:</strong> कुतुब मीनार दक्षिण दिल्ली के महरोली क्षेत्र में स्थित दुनिया की सबसे ऊंची ईंटों से बनी मीनार है। इसकी ऊंचाई लगभग 72.5 मीटर है। इसकी नींव गुलाम वंश के संस्थापक कुतुबुद्दीन ऐबक ने 1199 में रखी थी, और बाद में उनके उत्तराधिकारी इल्तुतमिश ने इसे पूरा करवाया था।</p>
+                    <p class="hinglish-text"><strong>Hinglish:</strong> Qutub Minar Delhi ke Mehrauli mein sthit hai. Yeh world ki sabse unchi brick minar hai. Iski shuruat Qutb-ud-din Aibak ne ki thi aur baad mein Shams-ud-din Iltutmish ne iske baki floors banwaye the.</p>
+
+                    <div class="features-list">
+                        <h3>Rochak Tathya (Interesting Facts):</h3>
+                        <ul>
+                            <li><strong>Iron Pillar:</strong> Iske parisar mein ek aisa lohe ka stambh (Iron Pillar) hai jis par sadiyon se zang (rust) nahi laga hai.</li>
+                            <li><strong>UNESCO Site:</strong> Yeh complex UNESCO World Heritage Site ki list mein shamil hai.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Monument 4: Hampi -->
+            <article class="monument-section" data-keywords="hampi karnataka ruins vijayanagara empire stone chariots">
+                <img src="https://images.unsplash.com/photo-1620766188414-206f3d03322e?auto=format&fit=crop&w=1000&q=80" alt="Hampi Karnataka Ruins and Temples">
+                <div class="monument-content">
+                    <h2>4. Hampi, Karnataka (हम्पी, कर्नाटक)</h2>
+                    
+                    <h3>Vijayanagara Samrajya aur Hampi ke Khandhar (Vijayanagara Empire & Ruins)</h3>
+                    <p class="hindi-text"><strong>Hindi:</strong> हम्पी कर्नाटक राज्य में तुंगभद्रा नदी के किनारे स्थित एक प्राचीन गाँव है, जो 14वीं शताब्दी में शक्तिशाली विजयनगर साम्राज्य की राजधानी था। यहाँ के भव्य मंदिर, महल और पत्थर के रथ भारतीय वास्तुकला की पराकाष्ठा को दर्शाते हैं।</p>
+                    <p class="hinglish-text"><strong>Hinglish:</strong> Hampi Karnataka mein sthit Vijayanagara Empire ki glorious capital thi. Yahan ke ancient stone temples, monolithic statues aur historical ruins history lovers ke liye ek mukhy aakarshan hain.</p>
+
+                    <div class="features-list">
+                        <h3>Mukhya Sthal (Key Highlights):</h3>
+                        <ul>
+                            <li><strong>Virupaksha Temple:</strong> Jo aaj bhi pooja ke liye active hai.</li>
+                            <li><strong>Stone Chariot:</strong> Vitthala Temple complex ka prasiddh patthar ka rath.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
         </div>
+
     </main>
 
     <footer>
-        <p>&copy; 2026 Bharatiya Aitihasik Sthal. All Rights Reserved. Designed with Best UI & SEO.</p>
+        <p>&copy; 2026 Bharat Ke Aitihasik Sthal. All Rights Reserved. Designed with Advanced SEO & Structured Content.</p>
     </footer>
 
     <script>
-        function filterPlaces() {
+        function filterContent() {
             let input = document.getElementById('searchInput').value.toLowerCase();
-            let cards = document.getElementsByClassName('card');
+            let sections = document.getElementsByClassName('monument-section');
             
-            for (let i = 0; i < cards.length; i++) {
-                let name = cards[i].getAttribute('data-name');
-                if (name.includes(input)) {
-                    cards[i].style.display = "";
+            for (let i = 0; i < sections.length; i++) {
+                let keywords = sections[i].getAttribute('data-keywords');
+                let textContent = sections[i].innerText.toLowerCase();
+                if (keywords.includes(input) || textContent.includes(input)) {
+                    sections[i].style.display = "";
                 } else {
-                    cards[i].style.display = "none";
+                    sections[i].style.display = "none";
                 }
             }
         }
